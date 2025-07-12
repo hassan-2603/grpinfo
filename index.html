@@ -1,115 +1,121 @@
 <!DOCTYPE html>
-<html>
- 
-
-<head> <meta charset="utf-8">
-  <title data-l10n-id="newtab-page-title">New Tab</title>
-  <meta name="color-scheme" content="light dark">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel= "stylesheet" href= "style.css">
-  </head>
-    <body>
-        <div id="main">
-        <audio id="audioa" src="./images/click_sound.wav" preload="auto"></audio>
-        <div id="statics">
-          <code> &#x2665; 42k </code>
-          <code> &#x1F441; 200k </code>
-          <code >&#x270E; 5K</code>
-        </div>
-        <div id="contact_us" onclick="show_popup()"><span>&#9742;</span><span style="margin-left: 5px;">  Contact Us</span></div>
-        <div id="popup">
-          <div id="my_contact">
-            <div class="cn_detail">
-              <span id="span_2" style="display: flex;align-items: center; justify-content: center; font-size: 30px; margin-top: 15%; color: chartreuse;"> Contact Details</span>
-              <div id="message_box1">
-                <code class="text_box" id="email_field"></code>
-                <code class="text_box" id="phone_field" style="color: white;"></code>
-                <code class="text_box" id="home_address_field" ></code>
-                <code class="text_box" id="current_address_field" style="color: white;"></code>
-                <code class="text_box" id="instagram_field" ></code>
-                <code class="text_box" id="linkedin_field" style="color: white;"></code>
-                <code class="text_box" id="telegram_field" ></code>
-                
-              </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <span><img width="83" src="assets/logo.svg" alt=""></span>
+            <div class="flex">
+                <button class="btn">English</button>
+                <button class="btn btn-red-sm">Sign In</button>
             </div>
-          </div>
-          <div id="logo"></div>
-          <div id="query">
-            
-            <div class="cn_detail" id="input_box">
-              <span id="span_1" style="display: flex;align-items: center; justify-content: center; font-size: 30px; margin-top: 15%; color: chartreuse;"> Let Me Know !</span>
-              <input id="c_name" type="text" placeholder="Name" class="c_input">
-              <input id="c_email" type="text" placeholder="Email" class="c_input">
-              <input id="c_phone" type="text" placeholder="Phone" class="c_input">
-              <input id="c_address" type="text" placeholder="Address" class="c_input">
-              <input id="c_query" type="text" placeholder="query" class="c_input">
-              <button id="c_sumit" onclick="send_query()">Intro Shake</button>
-          </div></div>
-          <button id="close_pop" onclick="hidepopup()">X</button>
-        </div>
-        <div id="name_holder">MUJTABA HASSAN</div>
-        <div id="time_date"><span>&#x23F0; </span><span id="times"></span></div>
-        <div id="button_con">
-          <button  class="bu" onclick="move(0)">&#8592;</button>
-          <button class="bu" onclick="move(1)">&#8594;</button>
-        </div>
-      <div id="tab_bar">
-        
-        <div class="profile" id="p_1" onclick="change_pf('mujtaba')"><img src="images/images(1).jpg" id="image_1" style="filter:drop-shadow(0px 9px 12px rgba(0,255,13,0.6));" ></img></div>
-        <div class="profile" id="p_2"onclick="change_pf('satyam')"><img src="images/images(2).jpg" id="image_2" style="filter:drop-shadow(0px 9px 12px rgba(0, 102, 255, 0.6));"></img></div>
-        <div class="profile" id="p_3"onclick="change_pf('devesh')"><img src="images/images(3).jpg" id="image_3" style="filter:drop-shadow(0px 9px 12px rgba(255, 166, 0, 0.6));" ></img></div>
-        <div class="profile" id="p_4"onclick="change_pf('pritam')"><img src="images/images(4).jpg" id="image_4" style="filter:drop-shadow(0px 9px 12px rgba(255, 0, 0, 0.6));"></img></div>
-        
-    
-      </div>
-       <div id="header">       
-       </div>
-       <div id="main_2">
-         <div id="div_left"> 
-          <div id="div_l_1">
-            <div id="div_l_2"><code>WHO AM I ?</code></div>
-            <div id="div_l_3"> <div id="message_box">
-              <code class="text_box">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-              <code class="text_box" style="color: white;">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-              <code class="text_box">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-              <code class="text_box" style="color: white;">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-              <code class="text_box">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-              <code class="text_box" style="color: white;">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-            
-
-            </div></div>
-          </div>
-         </div>
-         <div id="div_middle">
-                <div id="div_m_1">
-                  <img src="images/images(1).jpg" id="main_image" ></img>
-                </div>
-         </div>
-         <div id="div_right"> 
-          <div id="div_r_1">
-          <div id="div_r_2"><code> WHAT I DO ?</code></div>
-          <div id="div_r_3">
-            <div id="message_box">
-             
-             
-              <code class="text_box">&#9679; Learning Most Common Programming Languages Like C, C++ , Python ,  Web-langusges .</code>
-              <code class="text_box" style="color: white;">&#9679; In C++ I Am Learning Data Stucture And Algoritms And Also Try To Make More Efficient DSA So I Invest My Time In Think New Ideas .</code>
-              <code class="text_box">&#9679; In Web-langusges Try To Learn CSS , JS  HTML By Make Different Web Projects , Like Portfolio Website , Friend Chat and Video call App , Self-Inviation-Website .</code>
-              <code class="text_box" style="color: white;">&#9679; As Backend Tech I am Learning NODEJS , FLASK-from-PYHTON  To Make Proper API .</code>
-              <code class="text_box">&#9679;  In Python AI/ML And DATA ANALYTICS Using Numpy-as-np , Tensorflow-as-tf, Pandas-as-pd , , Neural Networks , Object-Detection And Many More.</code>
-              <code class="text_box" style="color: white;">&#9679; Most Important - Free Time I Spend In Thinking And Reasearching New Idea , Math , Physics , Tech </code>
-              
-
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <span>Unlimited movies, TV</span>
+            <span>shows and more</span>
+            <span>Starts at ₹149. Cancel at any time.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero-button">
+            <input type="text" placeholder="Email Address">
+            <button class="btn btn-red">Get Started &gt;</button>
             </div>
-          </div>
         </div>
-      </div>
-       </div>
+    </div>
+    <div class="saperation"></div>
+    <section class="first">
+        <div>
+            <span>Enjoy on your TV</span>
+            <span>Watch ons mart TV, PlayStation, Xbox,</span> 
+            <span>Chromecast, Apple TV, Blu-ray players and more</span>
+        </div>
+        <div class="secimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrOemosMbOaTAANQTWRR611qQsEqnReWKQPQ&s" alt="">
+        </div>
+    </section> 
+    <div class="saperation"></div>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <span>What is Netflix ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+    <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+        <div class="faqbox">
+            <span>How much does Netflix cost ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+    <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+        <div class="faqbox">
+            <span>Where can I watch ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+    <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+        <div class="faqbox">
+            <span>How do i cancel ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+    <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+        <div class="faqbox">
+            <span>Is Netflix good for children ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+    <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+        <div class="faqbox">
+            <span>What is Netflix ?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="white">
+    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+    <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+        </div>
+    </section>
+    <div class="saperation"></div>
+    <footer>
+        
+            <div class="question">
+                Questions? Call 000-800-919-1694
+            </div>
+        <div class="footer">
+            <div class="footer-item">
+            <a href="faq">FAQ</a>
+            <a href="Investor Relaton">Investor Relaton</a>
+            <a href="Privacy">Privacy</a>
+            <a href="Speed Test">Speed Test</a>
+            </div>
 
-
-
-     </div>
-    </body>
-
-<script src = "script.js"></script>                                                                                                                                      
-</html>
+        <div class="footer-item">
+            <a href="Help Center">Help Center</a>
+            <a href="Job">Job</a>
+            <a href="Cookie Preferences">Cookie Preferences</a>
+            <a href="Legal Notices">Legal Notices</a>
+        </div>
+        <div class="footer-item">
+            <a href="Corporate Information">Corporate Information</a>
+            <a href="Account">Account</a>
+            <a href="Way to Watch">Way to Watch</a>
+            <a href="Only on Netflix">Only on Netflix</a>
+        </div>
+        <div class="footer-item">
+            <a href="Media Center">Media Center</a>
+            <a href="Terms of Use">Terms of Use</a>
+            <a href="Contact US">Contact US</a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html> 
